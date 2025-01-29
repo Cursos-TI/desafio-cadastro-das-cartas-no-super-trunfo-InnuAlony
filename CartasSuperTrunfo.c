@@ -5,15 +5,15 @@
 // Tema 1 - Cadastro das Cartas
 // Definindo a estrutura das cartas
 typedef struct {
-    char Nome;
-    int Populacao;
-    int Area;
+    char nome;
+    int populacao;
+    int area;
     int PIB;
     int densidade;
 } Carta;
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Função para criar uma carta
-Carta criarCarta(char nome[], int populacao, int area, int PIB, int densidade) {
+Carta criarCarta(char nome[10], int populacao, int area, int PIB, int densidade) {
     Carta c;
     strcpy(c.nome, nome);
     c.População = populacao;
